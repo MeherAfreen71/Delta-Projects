@@ -1,0 +1,59 @@
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+    text-align: center;
+/*  animation-name: colorAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+    animation-direction: alternate; */
+    animation: widthAnimated 5s ease-in 0s infinite alternate-reverse;
+    position: absolute;
+    left: 300px;
+}
+
+@keyframes widthAnimated {
+    0% {
+        width: 100px;
+        height: 100px;
+        background-color:violet;
+    }
+    15% {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        border-radius: 50%;
+    }
+    30% {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        border-radius: 50%;
+    }
+    50% {
+        width: 250px;
+        height: 250px;
+        background-color: green;
+        border-radius: 50%;
+    }
+    60% {
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    80% {
+        width: 450px;
+        height: 450px;
+        background-color: orange;
+        border-radius: 50%;
+    }
+    100% {
+        width: 600px;
+        height: 600px;
+        background-color: red;
+        border-radius: 50%;
+    }
+}
